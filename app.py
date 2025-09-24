@@ -14,7 +14,7 @@ bild = st.file_uploader("Bild hochladen", type=["png", "jpg", "jpeg"])
 
 def create_filled_pdf(name, position, about, image_file):
     vorlage_pfad = "Albaad_NeueMitarbeiter_Onboarding_3_Template.pdf"  # muss im gleichen Ordner liegen
-    original_pdf = PdfReader(vorlage_pfad)
+    original_pdf = PdfReader("Albaad_NeueMitarbeiter_Onboarding_3_Template.pdf")
     
     # Erstelle Overlay
     packet = io.BytesIO()
